@@ -27,7 +27,7 @@
  　他のプロジェクトにAmbientコンポーネントを読み込む方法です。  
   
   ・Version 1.3.1  
-　「Library」→「Import local project」
+　「Library」→「Import local project」  
  　Choose components to importでAmbientにチェックしimport。
   
  ・Version 1.4.0  
