@@ -1,0 +1,305 @@
+{
+    "name": "Ambient",
+    "components": [
+        {
+            "name": "/main",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "81245c14-87a2-f56f-853f-6c90df0a46c2",
+                        "fromProperty": "data",
+                        "toId": "1c0c39dd-1aae-f243-3c2f-034124f9273f",
+                        "toProperty": "text"
+                    },
+                    {
+                        "fromId": "265bf1f6-ed85-8dae-4ba3-0c3a1336d041",
+                        "fromProperty": "touch.tap",
+                        "toId": "81245c14-87a2-f56f-853f-6c90df0a46c2",
+                        "toProperty": "Fetch"
+                    },
+                    {
+                        "fromId": "81245c14-87a2-f56f-853f-6c90df0a46c2",
+                        "fromProperty": "data",
+                        "toId": "846125e4-ccad-9829-1d53-07bf78cc3393",
+                        "toProperty": "data"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "265bf1f6-ed85-8dae-4ba3-0c3a1336d041",
+                        "type": "Group",
+                        "version": 2,
+                        "x": 148,
+                        "y": 2.6666666666666856,
+                        "parameters": {},
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "0b9779b0-d1b8-fa57-900a-f96134c31a35",
+                                "type": "Rectangle",
+                                "x": 20,
+                                "y": 46,
+                                "parameters": {},
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "1c0c39dd-1aae-f243-3c2f-034124f9273f",
+                                "type": "Text",
+                                "version": 2,
+                                "x": 20,
+                                "y": 128,
+                                "parameters": {
+                                    "text": "Ambient",
+                                    "alignX": "center",
+                                    "alignY": "center",
+                                    "color": "#000000",
+                                    "fontSize": 280
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "81245c14-87a2-f56f-853f-6c90df0a46c2",
+                        "type": "/Parts/Ambient",
+                        "x": -112,
+                        "y": 86.66666666666669,
+                        "parameters": {
+                            "Read key": ""
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "846125e4-ccad-9829-1d53-07bf78cc3393",
+                        "type": "Javascript2",
+                        "label": "Console.log",
+                        "x": 132,
+                        "y": 272.6666666666667,
+                        "parameters": {
+                            "code": "define({\n    inputs: {\n        data: \"string\"\n    },\n    outputs: {\n        outputValue: \"number\"\n    },\n    destroy: function(inputs, outputs) {\n\n    },\n    setup: function(inputs, outputs) {\n\n    },\n    run: function(inputs, outputs, changedInputs) {\n        console.log(inputs.data);\n    }\n});"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "data",
+                                "plug": "input",
+                                "type": {
+                                    "name": "string"
+                                },
+                                "group": "Inputs",
+                                "index": 2
+                            },
+                            {
+                                "name": "outputValue",
+                                "type": {
+                                    "name": "number"
+                                },
+                                "plug": "output",
+                                "group": "Outputs",
+                                "index": 3
+                            }
+                        ],
+                        "children": []
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/Parts/Ambient",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "86f63fae-cd51-5fe8-6ff2-cb6f8c4ada49",
+                        "fromProperty": "data",
+                        "toId": "d6269c3a-81c3-7314-5776-1c83cc3b5e6b",
+                        "toProperty": "data"
+                    },
+                    {
+                        "fromId": "0017a5d6-fa17-9c4a-48dd-093b5662e12c",
+                        "fromProperty": "Fetch",
+                        "toId": "86f63fae-cd51-5fe8-6ff2-cb6f8c4ada49",
+                        "toProperty": "fetch"
+                    },
+                    {
+                        "fromId": "0017a5d6-fa17-9c4a-48dd-093b5662e12c",
+                        "fromProperty": "Channel ID",
+                        "toId": "86f63fae-cd51-5fe8-6ff2-cb6f8c4ada49",
+                        "toProperty": "Channel_ID"
+                    },
+                    {
+                        "fromId": "0017a5d6-fa17-9c4a-48dd-093b5662e12c",
+                        "fromProperty": "Write key",
+                        "toId": "86f63fae-cd51-5fe8-6ff2-cb6f8c4ada49",
+                        "toProperty": "Write_Key"
+                    },
+                    {
+                        "fromId": "0017a5d6-fa17-9c4a-48dd-093b5662e12c",
+                        "fromProperty": "Read key",
+                        "toId": "86f63fae-cd51-5fe8-6ff2-cb6f8c4ada49",
+                        "toProperty": "Read_Key"
+                    },
+                    {
+                        "fromId": "0017a5d6-fa17-9c4a-48dd-093b5662e12c",
+                        "fromProperty": "n",
+                        "toId": "86f63fae-cd51-5fe8-6ff2-cb6f8c4ada49",
+                        "toProperty": "n"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "0017a5d6-fa17-9c4a-48dd-093b5662e12c",
+                        "type": "Component Inputs",
+                        "x": -66,
+                        "y": 74,
+                        "parameters": {},
+                        "ports": [
+                            {
+                                "name": "Channel ID",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 1
+                            },
+                            {
+                                "name": "Write key",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 2
+                            },
+                            {
+                                "name": "Read key",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 3
+                            },
+                            {
+                                "name": "Fetch",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 4
+                            },
+                            {
+                                "name": "n",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 5
+                            }
+                        ],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "d6269c3a-81c3-7314-5776-1c83cc3b5e6b",
+                        "type": "Component Outputs",
+                        "x": 352,
+                        "y": 94,
+                        "parameters": {},
+                        "ports": [
+                            {
+                                "name": "data",
+                                "plug": "input",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 1
+                            }
+                        ],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "86f63fae-cd51-5fe8-6ff2-cb6f8c4ada49",
+                        "type": "REST",
+                        "label": "REST Ambient",
+                        "x": 162,
+                        "y": 72,
+                        "parameters": {
+                            "code": "/*\nMIT License\n\nCopyright (c) 2019 maepu\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n*/\n\n\ndefine({\n\t// The input ports of the REST node, name of input and type\n\tinputs:{\n\t    //ExampleInput:'number',\n\t    Channel_ID:\"number\",\n\t    Write_Key:\"string\",\n\t    Read_Key:\"string\",\n\t    n:\"number\"\n\t},\n\t\n\t// The output ports of the REST node, name of output and type\n\toutputs:{\n\t    //ExampleOutput:'string',\n\t    data:\"string\"\n\t},\n\t\n\t//Add custom code to setup the request object before the request\n\t//is made.\n\t//\n\t//*request.resource     contains the resource path of the request.\n\t//*request.method       contains the method, GET, POST, PUT or DELETE.\n\t//*request.headers      is a map where you can add additional headers.\n\t//*request.parameters   is a map the parameters that will be appended\n\t//                      to the url.\n\t//*request.content      contains the content of the request as a javascript\n\t//                      object.\n\t//\n\t// The inputs and outputs maps can also be accessed via *this.inputs and\n\t// *this.outputs.\n\trequest:function(inputs,request) {\n\t    var channel = {\n            channelId: null,\n            writeKey: null,\n            readKey: null,\n            userKey: null,\n            dev: false\n        };\n        \n        channel.channelId = inputs.Channel_ID;\n        channel.writeKey = inputs.Write_Key;\n        channel.readKey = inputs.Read_Key;\n        request.resource =  '/api/v2/channels/' + inputs.Channel_ID + '/data'+ '?readKey=' + inputs.Read_Key + '&n=' + inputs.n;\n        console.log(request.resource);\n\t},\n\t\n\t// Add custom code to convert the response content to outputs\n\t//\n\t//*response.status    The status code of the response\n\t//*response.content   The content of the response as a javascript\n\t//                    object.\n\t//*response.request   The request object that resulted in the response.\n\t//\n\t// The inputs and outputs maps can also be accessed via *this.inputs and\n\t// *this.outputs.\n\tresponse:function(outputs,response) {\n\t    outputs.data = response.content;\n\t}\n})\n",
+                            "method": "GET",
+                            "backendEndpoint": "http://54.65.206.59",
+                            "Write_Key": "",
+                            "Read_Key": "",
+                            "resource": ""
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "Channel_ID",
+                                "plug": "input",
+                                "type": {
+                                    "name": "number"
+                                },
+                                "group": "Inputs",
+                                "index": 13
+                            },
+                            {
+                                "name": "Write_Key",
+                                "plug": "input",
+                                "type": {
+                                    "name": "string"
+                                },
+                                "group": "Inputs",
+                                "index": 14
+                            },
+                            {
+                                "name": "Read_Key",
+                                "plug": "input",
+                                "type": {
+                                    "name": "string"
+                                },
+                                "group": "Inputs",
+                                "index": 15
+                            },
+                            {
+                                "name": "n",
+                                "plug": "input",
+                                "type": {
+                                    "name": "number"
+                                },
+                                "group": "Inputs",
+                                "index": 16
+                            },
+                            {
+                                "name": "data",
+                                "type": {
+                                    "name": "string"
+                                },
+                                "plug": "output",
+                                "group": "Outputs",
+                                "index": 17
+                            }
+                        ],
+                        "children": []
+                    }
+                ]
+            }
+        }
+    ],
+    "settings": {
+        "devices": "Default Device",
+        "Default Device.fillMode": "aspectFit",
+        "Default Device.canvasWidth": 1080,
+        "Default Device.canvasHeight": 1920,
+        "mqttUseExternalBroker": true,
+        "mqttBrokerUrl": "",
+        "Default Device.rootComponent": "/Main"
+    },
+    "rootNodeId": "265bf1f6-ed85-8dae-4ba3-0c3a1336d041",
+    "version": "1"
+}
