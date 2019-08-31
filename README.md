@@ -33,7 +33,7 @@
  ・Version 1.4.0  
  　「Library」  
   　Ambientプロジェクトを選択。  
-     ComponentのAmbientをチェックしimport。  
+   　ComponentのAmbientをチェックしimport。  
 
  # コンポーネントの説明  
 
