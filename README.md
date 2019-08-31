@@ -28,10 +28,10 @@
  　・data       ：取得したデータがJSON形式で出力されます
 
 　【プロパティ】
- 　・Channel ID ：　AmbentのチャンネルID 
- 　・Read key   ：　Ambientの対象チャンネルのリードキー 
- 　・Write key  ：　Ambientの対象チャンネルのライトキー（使用していません） 
- 　・n          ：　データを取得する件数 
+ 　・Channel ID ：　AmbentのチャンネルID  
+ 　・Read key   ：　Ambientの対象チャンネルのリードキー  
+ 　・Write key  ：　Ambientの対象チャンネルのライトキー（使用していません）  
+ 　・n          ：　データを取得する件数  
 
 # ライセンス
 　MIT License
