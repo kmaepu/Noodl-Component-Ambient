@@ -31,9 +31,9 @@
  　Choose components to importでAmbientにチェックしimport。
   
  ・Version 1.4.0  
- 　「Library」
-  　Ambientプロジェクトを選択。
-    ComponentのAmbientをチェックしimport。
+ 　「Library」  
+  　Ambientプロジェクトを選択。  
+    ComponentのAmbientをチェックしimport。  
 
  # コンポーネントの説明  
 
